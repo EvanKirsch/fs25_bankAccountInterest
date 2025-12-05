@@ -14,7 +14,7 @@ Two dev console commands have been added to control the interest rate:
 `biSetInterestRate <interest_rate>` - allows the modification of the interest rate. ex: `biSetInterestRate 0.03` would set the interest rate to the default.
 `biGetInterestRate` - prints the current interest rate to the console.
 
-GitHub:
+GitHub: https://github.com/EvanKirsch/fs25_bankAccountInterest
 ]]></en>
     <de><![CDATA[
 Fügt Zinsberechnungen hinzu, sodass das Bankguthaben eines landwirtschaftlichen Betriebs zu Beginn jedes Monats verzinst wird. Der Standardzinssatz beträgt 3 % p. a.
@@ -23,7 +23,7 @@ Zwei Konsolenbefehle für Entwickler wurden hinzugefügt, um den Zinssatz zu ste
 `biSetInterestRate <Zinssatz>` – ermöglicht die Änderung des Zinssatzes. Beispiel: `biSetInterestRate 0.03` setzt den Zinssatz auf den Standardwert.
 `biGetInterestRate` – gibt den aktuellen Zinssatz in der Konsole aus.
 
-Git-Hub:
+Git-Hub: https://github.com/EvanKirsch/fs25_bankAccountInterest
     ]]></de>
   </description>    
   <iconFilename>icon_bankAccountInterest.dds</iconFilename>
