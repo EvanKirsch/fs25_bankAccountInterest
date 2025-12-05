@@ -10,14 +10,6 @@ BAI_bankAccountInterest.commands = {
     { 'biGetInterestRate', 'gets annual bank account interest rate', 'getInterestRate' },
 }
 
-local BAI_bankAccountInterest_mt = Class(BAI_bankAccountInterest, AbstractManager)
-
-function BAI_bankAccountInterest.new(customMt)
-    local self = BAI_bankAccountInterest:superClass().new(customMt or DCE_devConsoleExtended_mt)
-
-    return self
-end
-
 function BAI_bankAccountInterest:loadMap()
     g_messageCenter:subscribe(MessageType.PERIOD_CHANGED, self.onPeriodChanged, self)
 end
@@ -39,7 +31,6 @@ function BAI_bankAccountInterest:onPeriodChanged()
     end
 end
 
-
 -- Borrowed from Courseplay
 function BAI_bankAccountInterest:init()
     self:registerConsoleCommands()
@@ -53,7 +44,7 @@ function BAI_bankAccountInterest:registerConsoleCommands()
     end
 end
 
----@param myRate rate to be set, expressed as float
+-- @param myRate rate to be set, expressed as float
 function BAI_bankAccountInterest:setInterestRate(myRate)
     BAI_bankAccountInterest.rate = myRate
     print("BAI_bankAccountInterest.rate=" .. tostring(BAI_bankAccountInterest.rate))
