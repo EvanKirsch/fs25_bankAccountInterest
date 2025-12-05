@@ -24,7 +24,7 @@ Zwei Konsolenbefehle für Entwickler wurden hinzugefügt, um den Zinssatz zu ste
 `biGetInterestRate` – gibt den aktuellen Zinssatz in der Konsole aus.
 
 Git-Hub: https://github.com/EvanKirsch/fs25_bankAccountInterest
-    ]]></de>
+]]></de>
   </description>    
   <iconFilename>icon_bankAccountInterest.dds</iconFilename>
   <multiplayer supported="true"/>
