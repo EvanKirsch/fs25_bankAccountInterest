@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="104" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+  <author>Evan Kirsch</author>
+  <version>1.0.0.0</version>
+  <title>
+      <en>Bank Balance Earns Interest</en>
+      <de>Das Bankguthaben Wird Verzinst</de>
+  </title>
+  <description>
+    <en><![CDATA[
+Adds interest calculations so that a farm's bank balance earns interest at the beginning of every month. The default rate is 3% APY.
+
+Two dev console commands have been added to control the interest rate:
+`biSetInterestRate <interest_rate>` - allows the modification of the interest rate. ex: `biSetInterestRate 0.03` would set the interest rate to the default.
+`biGetInterestRate` - prints the current interest rate to the console.
+
+GitHub:
+]]></en>
+    <de><![CDATA[
+Fügt Zinsberechnungen hinzu, sodass das Bankguthaben eines landwirtschaftlichen Betriebs zu Beginn jedes Monats verzinst wird. Der Standardzinssatz beträgt 3 % p. a.
+
+Zwei Konsolenbefehle für Entwickler wurden hinzugefügt, um den Zinssatz zu steuern:
+`biSetInterestRate <Zinssatz>` – ermöglicht die Änderung des Zinssatzes. Beispiel: `biSetInterestRate 0.03` setzt den Zinssatz auf den Standardwert.
+`biGetInterestRate` – gibt den aktuellen Zinssatz in der Konsole aus.
+
+Git-Hub:
+    ]]></de>
+  </description>    
+  <iconFilename>icon_bankAccountInterest.dds</iconFilename>
+  <multiplayer supported="true"/>
+  <extraSourceFiles>
+    <sourceFile filename="BAI_bankAccountInterest.lua" />
+  </extraSourceFiles>
+</modDesc>
