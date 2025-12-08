@@ -3,7 +3,7 @@
 --
 
 BAI_bankAccountInterest = {}
-BAI_bankAccountInterest.rate = 0.03
+BAI_bankAccountInterest.rate = 0.01
 BAI_bankAccountInterest.commands = {
     --- call name, description, function
     { 'biSetInterestRate', 'sets annual bank account interest rate', 'setInterestRate' },
