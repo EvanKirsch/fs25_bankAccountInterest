@@ -15,6 +15,11 @@ Two dev console commands have been added to control the interest rate:
 `biGetInterestRate` - prints the current interest rate to the console.
 
 GitHub: https://github.com/EvanKirsch/fs25_bankAccountInterest
+
+Changelog
+---
+1.1.0.0
+  - Removes unnecessary global variables
 ]]></en>
     <de><![CDATA[
 Fügt Zinsberechnungen hinzu, sodass das Bankguthaben eines landwirtschaftlichen Betriebs zu Beginn jedes Monats verzinst wird. Der Betrag ist in der Zwischensumme „Sonstiges“ auf dem Finanzbildschirm enthalten. Der Standardzinssatz beträgt 1% p. a.
@@ -24,6 +29,11 @@ Zwei Konsolenbefehle für Entwickler wurden hinzugefügt, um den Zinssatz zu ste
 `biGetInterestRate` – gibt den aktuellen Zinssatz in der Konsole aus.
 
 Git-Hub: https://github.com/EvanKirsch/fs25_bankAccountInterest
+
+Änderungsprotokoll
+---
+1.1.0.0
+  - Entfernt unnötige globale Variablen
 ]]></de>
   </description>    
   <iconFilename>icon_bankAccountInterest.dds</iconFilename>
