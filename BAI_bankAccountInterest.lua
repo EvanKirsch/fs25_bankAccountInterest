@@ -18,16 +18,11 @@ function BAI_bankAccountInterest:onPeriodChanged()
     if g_currentMission:getIsServer() then
         local farms = g_farmManager.farmIdToFarm
         for _, farm in pairs(farms) do
-            cashAmount = farm.money
-            farmId = farm.farmId
-
-            if cashAmount ~= nil and cashAmount > 0 then
-                local interestAmount = cashAmount * (BAI_bankAccountInterest.rate / 12)
-                g_currentMission:addMoney(interestAmount, farmId, MoneyType.OTHER, true, true)
+            if farm.money ~= nil and farm.money > 0 then
+                local interestAmount = farm.money * (BAI_bankAccountInterest.rate / 12)
+                g_currentMission:addMoney(interestAmount, farm.farmId, MoneyType.OTHER, true, true)
             end
-
         end
-
     end
 end
 
